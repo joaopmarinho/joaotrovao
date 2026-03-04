@@ -76,9 +76,9 @@ export const defaultContent: SiteContent = {
     bio: "DJ recifense com atuação em festas de pop, brasilidades, latin e eletrônico. Criador do projeto artístico Ritual do Trovão.",
     bioShort: "DJ • Produtor • Recife",
     presskitUrl: "https://drive.google.com/drive/u/0/folders/1BzS6SpwHsszBmb65U__fy1RNGn0sUnWK",
-    instagramUrl: "https://instagram.com",
+    instagramUrl: "https://www.instagram.com/joaotrovaum/",
     soundcloudUrl: "https://soundcloud.com/jo-o-pedro-887",
-    emailUrl: "mailto:contato@joaotrovao.com",
+    emailUrl: "mailto:joao.trovaum@gmail.com",
   },
   home: {
     heroTitle: "JOÃO TROVÃO",
@@ -99,13 +99,13 @@ export const defaultContent: SiteContent = {
     heroText: "Sets energéticos para manter a pista cheia, transitando entre pop, brasilidades, latinidades e influências eletrônicas.",
     styles: [
       { title: "Pop & Dancefloor", description: "Hits internacionais e nacionais que fazem a pista explodir." },
-      { title: "Latin & Brasilidades", description: "Funk, forró, pagode e reggaeton com energia contagiante." },
+      { title: "Latin & Brasilidades", description: "Funk, mpb, pop nacional e latinidades com energia contagiante." },
       { title: "Electronic Club", description: "House, techno e EDM para os momentos de pico da noite." },
     ],
     experiences: [
       { id: "e1", title: "Supernova", description: "Pop internacional: Ariana Grande, Rihanna, Madonna", tags: ["pop", "dance", "internacional"] },
       { id: "e2", title: "Discotèque Club", description: "Lady Gaga + pop/house/dance", tags: ["pop", "house", "dance"] },
-      { id: "e3", title: "A Última Indie do Ano", description: "IRAQ Recife: indie/rock/emo/grunge", tags: ["indie", "rock", "emo"] },
+      { id: "e3", title: "A Última Indie do Ano", description: "IRAQ Recife: indie/rock/emo", tags: ["indie", "rock", "emo"] },
       { id: "e4", title: "Clubber dje favela & Clubber 99", description: "Funk/electro/rave/latin club/techno/hard techno/hard dance/bounce/EDM", tags: ["funk", "electro", "rave", "techno"] },
     ],
     venues: [
