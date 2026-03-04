@@ -113,7 +113,7 @@ export default function Studio() {
             ))}
           </StudioSection>
 
-          {/* Home Sets */}
+          Home Sets
           <StudioSection title="Sets em Destaque (Home)" action={<AddBtn onClick={() => addSet("home")} />}>
             {content.home.featuredSets.map((s) => (
               <div key={s.id} className="flex items-start gap-2 rounded-lg border border-border bg-card p-4">
