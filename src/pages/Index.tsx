@@ -1,23 +1,51 @@
 import { defaultContent } from "@/content/siteContent";
 import HeroPortal from "@/components/HeroPortal";
 import Section from "@/components/Section";
-import CardGrid from "@/components/CardGrid";
+import CardGrid, { CardItem } from "@/components/CardGrid";
 import SetCard from "@/components/SetCard";
 import VenueCard from "@/components/VenueCard";
-import Navbar from "@/components/Navbar";
+import TagList from "@/components/TagList";
+import TopBar from "@/components/TopBar";
 import Footer from "@/components/Footer";
 import { Instagram, Headphones, FileText, Mail } from "lucide-react";
 
 const content = defaultContent;
+const c = content.openFormat;
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <TopBar />
 
       <main>
         <HeroPortal title={content.home.heroTitle} subtitle={content.home.heroSubtitle} />
 
+        {/* Estilos Musicais */}
+        <Section title="Estilos Musicais" id="estilos">
+          <CardGrid columns={3}>
+            {c.styles.map((s) => (
+              <CardItem key={s.title}>
+                <h3 className="mb-2 font-display text-sm font-bold tracking-wide text-primary">{s.title}</h3>
+                <p className="text-sm text-muted-foreground">{s.description}</p>
+              </CardItem>
+            ))}
+          </CardGrid>
+        </Section>
+
+        {/* Experiência em Festas */}
+        <Section title="Experiência em Festas" id="experiencia" className="gradient-bg">
+          <CardGrid columns={2}>
+            {c.experiences.map((e) => (
+              <CardItem key={e.id}>
+                <h3 className="mb-1 font-display text-sm font-bold tracking-wide text-foreground">{e.title}</h3>
+                <p className="mb-3 text-sm text-muted-foreground">{e.description}</p>
+                <TagList tags={e.tags} />
+              </CardItem>
+            ))}
+          </CardGrid>
+        </Section>
+
+        {/* Sets em Destaque */}
         <Section title="Sets em Destaque" id="sets">
           <CardGrid>
             {content.home.featuredSets.map((set) => (
@@ -26,6 +54,7 @@ const Index = () => {
           </CardGrid>
         </Section>
 
+        {/* Locais & Eventos */}
         <Section title="Locais & Eventos" id="venues" className="gradient-bg">
           <CardGrid>
             {content.home.venues.map((v) => (
@@ -34,7 +63,22 @@ const Index = () => {
           </CardGrid>
         </Section>
 
-        <Section title="Contato" id="contato">
+        {/* Eventos Privados */}
+        <Section title="Eventos Privados" id="privados">
+          <CardItem>
+            <p className="text-foreground">{c.privateEvents}</p>
+          </CardItem>
+        </Section>
+
+        {/* Produção & Técnica */}
+        <Section title="Produção & Técnica" id="producao" className="gradient-bg">
+          <CardItem>
+            <p className="text-foreground">{c.production}</p>
+          </CardItem>
+        </Section>
+
+        {/* Contato / Booking */}
+        <Section title="Booking" id="contato">
           <div className="flex flex-wrap justify-center gap-4">
             {[
               { href: content.profile.instagramUrl, label: "Instagram", icon: Instagram },
