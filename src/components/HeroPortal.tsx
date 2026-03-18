@@ -44,16 +44,6 @@ export default function HeroPortal({ title, subtitle }: HeroPortalProps) {
           {subtitle}
         </motion.p>
 
-        {/* Descrição */}
-        <motion.p
-          className="max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg pointer-events-none"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6, duration: 0.7 }}
-        >
-          Techno, electro e trance encontram pop, brasilidades e latinidades. Open format com foco em energizar a pista e enquadrar a melhor experiência para cada festa.
-        </motion.p>
-
         {/* Avatar / Pixel Art Image */}
         <motion.div
           className="relative mx-auto mt-8 w-full max-w-4xl"
@@ -72,6 +62,35 @@ export default function HeroPortal({ title, subtitle }: HeroPortalProps) {
             loading="eager"
           />
         </motion.div>
+
+        {/* Descrição */}
+        <motion.div
+          className="max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg pointer-events-none space-y-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.7 }}
+        >
+          <p>
+            Bem-vindxs ao meu universo.<br />
+            Aqui compartilho experiências que atravessam minha trajetória como DJ, entre momentos passados e vivências que seguem pulsando no presente.
+          </p>
+          <p>
+            Tudo o que apresento é fruto de entrega, técnica, pesquisa e estudo — mas também de algo ainda mais íntimo: um pedaço da minha alma em cada sonoridade, muito do que sou em cada escolha.
+          </p>
+          <p>
+            Entre constância, sensibilidade e construção musical, busco transformar som em presença, experiência e memória. O meu melhor está justamente nisso: oferecer com verdade tudo aquilo que posso criar e sentir.
+          </p>
+          <p>
+            Para mim, a música é harmonia e impacto; é percussão da alma, beleza em meio ao caos. É um tecido delicado, intenso e vivo, que nas mãos certas pode tocar, romper, reconstruir e transformar.
+          </p>
+          <p>
+            Me permita ser ouvido.<br />
+            Me permita ser sentido.<br />
+            Me permita ser um momento seu.
+          </p>
+        </motion.div>
+
+
       </div>
     </section>
   );

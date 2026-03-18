@@ -71,9 +71,9 @@ export interface SiteContent {
 export const defaultContent: SiteContent = {
   profile: {
     name: "JOÃO TROVÃO",
-    subtitle: "DJ • OPEN FORMAT • ELECTRONIC",
+    subtitle: "DJ • OPEN FORMAT • ELETRÔNICA • BRASILIDADES • LATINIDADES",
     city: "Recife, PE",
-    bio: "DJ recifense com atuação em festas de pop, brasilidades, latin e eletrônico. Criador do projeto artístico Ritual do Trovão.",
+    bio: "DJ recifense com atuação em festas de pop, brasilidades, latin e eletrônico.",
     bioShort: "DJ • Produtor • Recife",
     presskitUrl: "https://drive.google.com/drive/u/0/folders/1BzS6SpwHsszBmb65U__fy1RNGn0sUnWK",
     instagramUrl: "https://www.instagram.com/joaotrovaum/",
@@ -82,16 +82,16 @@ export const defaultContent: SiteContent = {
   },
   home: {
     heroTitle: "JOÃO TROVÃO",
-    heroSubtitle: "DJ • OPEN FORMAT • ELECTRONIC",
+    heroSubtitle: "DJ • OPEN FORMAT • ELETRÔNICA • BRASILIDADES • LATINIDADES",
     featuredSets: [
       { id: "s1", title: "Set Supernova Vol. 1", description: "Pop internacional energético", embedUrl: "", tags: ["pop", "dance"] },
       { id: "s2", title: "Clubber Dje Favela Mix", description: "Funk, electro e rave", embedUrl: "", tags: ["funk", "electro", "rave"] },
       { id: "s3", title: "Ritual do Trovão — Live", description: "Techno atmosférico ao vivo", embedUrl: "", tags: ["techno", "live"] },
     ],
     venues: [
-      { id: "v1", name: "Iraq", location: "Santo Amaro, Recife", events: ["Discotèque Club", "Supernova", "A Última Indie do Ano"] },
-      { id: "v2", name: "Quintal do Sossego", location: "Santo Amaro, Recife", events: ["Clubber 99", "Clubber dje favela"] },
-      { id: "v3", name: "Marcela Pub", location: "Recife", events: ["Bailão da Vilko"] },
+      { id: "v1", name: "Iraq", location: "Santo Amaro, Recife", events: ["Discotèque Club", "Supernova", "A Última Indie do Ano", "Revival Party"] },
+      { id: "v2", name: "Quintal do Sossego", location: "Santo Amaro, Recife", events: ["Clubber 99", "Clubber dje favela (after Nbomb)"] },
+      { id: "v3", name: "Marcela Pub", location: "Recife", events: ["Bailão da Vilko", "Clubber para as Íntimas"] },
     ],
   },
   openFormat: {
@@ -107,11 +107,12 @@ export const defaultContent: SiteContent = {
       { id: "e2", title: "Discotèque Club", description: "Lady Gaga + pop/house/dance", tags: ["pop", "house", "dance"] },
       { id: "e3", title: "A Última Indie do Ano", description: "IRAQ Recife: indie/rock/emo", tags: ["indie", "rock", "emo"] },
       { id: "e4", title: "Clubber dje favela & Clubber 99", description: "Funk/electro/rave/latin club/techno/hard techno/hard dance/bounce/EDM", tags: ["funk", "electro", "rave", "techno"] },
+      { id: "e5", title: "Revival Party", description: "Eurodance/00s-10s pop/Europop/Dance-pop", tags: ["dance", "eurosummer"] },
     ],
     venues: [
-      { id: "v1", name: "Iraq", location: "Santo Amaro, Recife", events: ["Discotèque Club", "Supernova", "A Última Indie do Ano"] },
+      { id: "v1", name: "Iraq", location: "Santo Amaro, Recife", events: ["Discotèque Club", "Supernova", "A Última Indie do Ano", "Revival Party"] },
       { id: "v2", name: "Quintal do Sossego", location: "Santo Amaro, Recife", events: ["Clubber 99", "Clubber dje favela (after Nbomb)"] },
-      { id: "v3", name: "Marcela Pub", location: "Recife", events: ["Bailão da Vilko"] },
+      { id: "v3", name: "Marcela Pub", location: "Recife", events: ["Bailão da Vilko", "Clubber para as Íntimas"] },
     ],
     privateEvents: "Sets personalizados para aniversários e eventos particulares.",
     production: "Atuação como técnico de som e coprodutor em diversas edições da Clubber dje favela, idealizada pela artista Aysha Diablo.",
